@@ -1,0 +1,28 @@
+ghschema_version = "1.0.0"
+
+id = "n2i"
+version = "0.0.1"
+name = "Node to Image"
+tagline = "A minimalist add-on to save shader node outputs as images"
+maintainer = "Greg Zaal <greg@polyhaven.com>"
+type = "add-on"
+website = "https://github.com/Poly-Haven/n2i"
+tags = ["Node", "Material", "Bake", "Import-Export"]
+
+blender_version_min = "4.5.0"
+# blender_version_max = "5.1.0"
+
+license = ["SPDX:GPL-2.0-or-later"]
+
+[permissions]
+files = "Saving the image files to disk"
+
+[build]
+paths_exclude_pattern = [
+    "__pycache__/",
+    "/.git/",
+    "/*.zip",
+    "/*.bat",
+    ".gitignore",
+    "/index.json",
+]
